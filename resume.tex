@@ -1,0 +1,120 @@
+\documentclass[a4paper,margin,line]{resume}
+\usepackage[defblank]{paralist}
+\usepackage{pdfpages}
+\usepackage{anysize}
+\usepackage[unicode]{hyperref}
+\hypersetup{
+    pdftitle={Seth Lunn's Resume},
+	pdfauthor={Seth Lunn},
+	pdfborder={0 0 0},
+	unicode=true
+}
+\marginsize{0.375in}{1.575in}{0.375in}{0.375in}
+\setdefaultitem{\footnotesize \textbullet}{}{}{}{}{}
+\setdefaultleftmargin{0em}{}{}{}{}{}
+\newcommand{\rurl}[1]{\hfill {\footnotesize \url{#1}}}
+\newcommand{\rdate}[1]{\hfill {\small #1}}
+\newcommand{\rproject}[4]{\item[#1] \hfill \rdate{#2} \\* \hfill \rdate{#3} \strut\hfill \rurl{#4} \\*}
+\begin{document}
+\name{\Large Seth K. Lunn}
+\begin{resume}
+\section{\mysidestyle Contact \\ Information}
+	\begin{asparablank}
+		\item 288 Main Street \hfill contact@sethlunn.com
+		\item Burlington, VT, 05401 \hfill github.com/guppitus
+	\end{asparablank}
+
+\section{\mysidestyle Objective}
+	\begin{asparablank}
+    	\item Seeking employment Summer-Fall 2017 .
+	\end{asparablank}
+ 
+\section{\mysidestyle Education}
+   \begin{compactdesc}
+		   \item[Vermont Technical College] - Williston, VT \rdate{August 2014 - Present}
+		   \begin{asparablank} { \small
+				   \item Major: B.S. Software Engineering
+		   } \end{asparablank}
+		   \begin{asparablank} { \small
+				   \item Expected Graduation: December 2017
+		   } \end{asparablank}
+   \end{compactdesc}
+
+\section{\mysidestyle Technical Skills}
+	\begin{compactdesc}
+		\item[Languages: ] \begin{asparablank} { \small
+			\item Ada, Bash, C, C++, C\#, Java, Javascript, Scala, Typescript
+		} \end{asparablank}
+		\item[Operating Systems: ] \begin{asparablank} { \small
+            \item Android, Linux, QNX
+		} \end{asparablank}
+		\item[Tools and Services: ] \begin{asparablank} { \small
+            \item Hadoop, Spark, Kafka, Git, SVN, TFS, Make, Ant, Maven, Spring, SQL, MongoDB, Selenium, Jenkins, ASP.net, ADO.net, Net Core
+		} \end{asparablank}
+	\end{compactdesc}
+
+\section{\mysidestyle Personal Projects}
+    \begin{asparadesc}
+    
+		\rproject{Clacky}{December 2014}{}{}
+		\small
+		A simple rational stack calculator developed in {\bf Java} using {\bf JFrame}. Clacky can handle large integers as well as fractions.
+		\normalsize
+		\\
+
+		\rproject{Splurge}{October 2015}{}{}
+		\small
+		A personal finance and budget calculator designed for {\bf Android} mobile phone use. Splurge supports similar features as competitor applications but without network connection requirements. All financial data is stored locally and can be exported or imported via csv files.
+		\normalsize
+		\\    
+    	
+        \rproject{SPB9}{January 2016}{}{https://github.com/Guppitus/SPB9}
+        \small
+        A slider puzzle solver AI that implements an {\bf A*} search using a {\bf Manhattan distance heuristic }. SPB9 is able to handle (n)by(n) slider puzzles, but is limited by the complexity of its heuristic.
+        \normalsize
+        \\
+        
+        \rproject{BDTU}{October 2016}{}{https://github.com/Guppitus/BDTU}
+        \small
+        A simple, robust, and relatively featureless back up program written in Java. BDTU makes use of a {\bf hash map} and {\bf Java serialization } to store application data. BDTU uses a simple {\bf Swing} GUI. 
+        \normalsize
+        \\
+        
+        \rproject{Run Far}{December 2016}{}{https://github.com/Guppitus/Run_Far}
+        \small
+        A {\bf MVC Java Web Application} designed to allow users to track their personal run distances along side fictional and real world distances. Run Far is managed with {\bf Maven} and uses a non-relational {\bf MongoDB} database using {\bf Spring} to store user and site information. 
+        \normalsize
+        \\
+        
+        \rproject{RPC}{May 2017}{}{https://github.com/Guppitus/RPC}
+        \small
+        Roleplaying Coder (RPC) is a roleplaying game designed to teach children at the middle school level programming concepts while simultaneously giving a storyline and unique and entertaining gaming experience. RPC is built with {\bf Unity3d} using {\bf C\#} and {\bf Unity Assets}.  
+        
+    \end{asparadesc}
+
+\section{\mysidestyle Experience}
+	\begin{asparadesc}
+        \rproject{Competitive Computing}{May 2016 to Present}{Software Engineer Intern}{https://competitive.com/}
+        \\
+        \small
+        Worked on Valve Works  {\bf Incite} platform custom reporting controllers and Microsoft SQL database. Performed QA for Husky {\bf Newton} an e business B2B platform. Worked on custom image controllers for internal {\bf SiteCore} platform environments.
+        \normalsize
+        \\
+{}
+    \end{asparadesc}
+
+\section{\mysidestyle References}
+	\begin{asparadesc}
+	\rproject{}{}{}{}
+	\\
+		\small
+		Available upon request.
+		\normalsize
+		\\
+{}
+    \end{asparadesc}
+	
+\end{resume}
+\end{document}
+
+% vim:set ai
